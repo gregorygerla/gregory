@@ -1,0 +1,54 @@
+body {
+  font-family:arial,sans-serif;
+  font-weight: bold;
+}
+
+@mixin mainblock {
+	 display: inline-flex; 
+
+    height: 400px;
+    width:100%;
+}
+h1{
+	font-size:3em;
+}
+h2{
+	font-size:2.5em;
+}
+@mixin innerblock{
+	margin: auto 5px;   
+    text-align:center;
+    width:100%;
+}
+.outerDiv {
+	@include mainblock;
+}
+.innerDiv {
+	@include innerblock;
+}
+.outerDiv.top{
+    background-color: #CFF09E;
+     color: #0B486B;
+}
+.outerDiv.works,a {
+	background-color: #0B486B;
+	color:#CFF09E;
+}
+.outerDiv.who{
+	display: inline-flex;
+	color:#0B486B;
+	background-color:#79BD9A;
+}
+.innerDiv.who{
+display: inline;
+}
+.bigh2,.bigh3{
+display: inline-block;
+width:350px;
+margin:30px;
+}
+.outerDiv.links{
+	color:black;
+	background-color:#CFF09E;
+}
+
