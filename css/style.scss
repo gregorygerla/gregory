@@ -1,54 +1,47 @@
-body {
-  font-family:arial,sans-serif;
-  font-weight: bold;
+@mixin section{
+	  width: 100%;
+  display: inline-block;
+}
+body{
+	font-family:'Lato', Calibri, Arial, sans-serif;
 }
 
-@mixin mainblock {
-	 display: inline-flex; 
+.outerDiv.who{ 
+@include section;
+  color:#0B486B;
+  background-color:#79BD9A;
 
-    height: 400px;
-    width:100%;
 }
-h1{
-	font-size:3em;
-}
-h2{
-	font-size:2.5em;
-}
-@mixin innerblock{
-	margin: auto 5px;   
-    text-align:center;
-    width:100%;
-}
-.outerDiv {
-	@include mainblock;
-}
-.innerDiv {
-	@include innerblock;
-}
-.outerDiv.top{
-    background-color: #CFF09E;
-     color: #0B486B;
-}
-.outerDiv.works,a {
+
+.outerDiv.works{
+@include section;
 	background-color: #0B486B;
 	color:#CFF09E;
 }
-.outerDiv.who{
-	display: inline-flex;
-	color:#0B486B;
-	background-color:#79BD9A;
-}
-.innerDiv.who{
-display: inline;
-}
-.bigh2,.bigh3{
-display: inline-block;
-width:350px;
-margin:30px;
-}
-.outerDiv.links{
-	color:black;
-	background-color:#CFF09E;
+
+.out{
+	color: #CFF09E;
 }
 
+
+
+h2,p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  .bigger{
+    font-size:5em;
+  }
+  .links{
+  color: #CFF09E
+  }
+  .outerDiv.linking{
+  @include section;
+  	background-color: #CFF09E;
+	color: #0B486B;
+  }
