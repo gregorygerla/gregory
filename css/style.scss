@@ -42,7 +42,9 @@ img:hover{
 	-moz-transform: translateX(50px);
 	transform: translateX(50px);
 }
-
+.title{
+	width:600px;
+}
 .cl-effect-1 a::after {
 	margin-left: 10px;
 	content: ']';
@@ -67,7 +69,7 @@ h2,p {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-  }
+ }
 
   .bigger{
     font-size:5em;

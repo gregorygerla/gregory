@@ -34,6 +34,9 @@ img:hover {
   -moz-transform: translateX(50px);
   transform: translateX(50px); }
 
+.title {
+  width: 600px; }
+
 .cl-effect-1 a::after {
   margin-left: 10px;
   content: ']';

@@ -235,6 +235,18 @@ a:hover {
     min-height: 1em;
 
 }
+.cbp-so-side2 {
+    width: 80%;
+    text-align:center;
+    float: center;
+    margin: 0;
+    margin-left: 25%;
+    margin-right:25%;
+    padding: 3em 4%;
+    overflow: hidden;
+    min-height: 1em;
+
+}
  
 /* Clear floats of children */
 .cbp-so-side:before,
@@ -242,7 +254,13 @@ a:hover {
     content: " ";
     display: table;
 }
- 
+
+ .title{
+    margin-right: 10%;
+margin-left: 10%;
+margin-bottom: 0;
+text-align: center;
+ }
 .cbp-so-side:after {
     clear: both;
 }
@@ -299,6 +317,7 @@ a:hover {
     transform: translateX(0px);
     opacity: 1;
 }
+
  
 /* For example, add a delay for the right side:
 .cbp-so-section.cbp-so-animate .cbp-so-side-right {
@@ -316,7 +335,7 @@ a:hover {
     }
  
     .cbp-so-section h2 {
-        margin: 0;
+        margin: 0%;
     }
  
     .cbp-so-side img {
